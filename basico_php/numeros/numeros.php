@@ -31,6 +31,15 @@ echo "<br>Maior número: " . (max(0, 150, 30, 20, -8, -200)) . "<br>";
 # The abs() function returns the absolute (positive) value of a number:
 echo "Valor inicial: -6.7<br>valor após a função: " . (abs(-6.7));
 
-echo "<br>Valor da raiz quadrada de 64: " . sqrt(64)
-# testando
+echo "<br>Valor da raiz quadrada de 64: " . sqrt(64) . "<br>";
+
+# Arrendondamento
+echo(round(0.60)) . "<br>";
+
+# random
+echo "número random: " . (rand()) . "<br>";
+
+# Inclusivo
+echo "Número random de 10 á 100(Inclusivo): ". (rand(10, 100));
+
 ?>
