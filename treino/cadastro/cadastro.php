@@ -16,6 +16,4 @@ echo "<br><br><b>Conteúdo da lista:</b><br>";
 echo "<pre>";
 print_r($lista);  
 echo "</pre>";
-
-
 ?>
