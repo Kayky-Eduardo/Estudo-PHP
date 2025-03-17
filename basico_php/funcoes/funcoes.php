@@ -1,4 +1,3 @@
-
 <?php
 
 # Função com argumento
@@ -12,7 +11,7 @@ familyName("Stale");
 familyName("Kai Jim");
 familyName("Borge");
 
-
+date_default_timezone_set('America/Sao_Paulo');
 echo date("d-m-y h:i:s") . '<br>';
 
 $email = "teste@dominio.com";
