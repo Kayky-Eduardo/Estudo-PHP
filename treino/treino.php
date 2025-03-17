@@ -23,7 +23,7 @@
 
 $escolha = htmlspecialchars($_POST['escolha']);
 
-while ($escolha != 3); {
+while ($escolha != 3) {
 echo "1. Cadastrar";
 echo "2. Mostrar";
 echo "3. sair";
@@ -40,11 +40,11 @@ echo "3. sair";
         foreach($lista as $x=>$y) {
             echo "$x: $y";
         } 
-    } 
-
-
-
-
+    } elseif ($escolha == 4) {
+        echo "Saindo..";
+    } else {
+        echo "Opção inválida!"
+    }
 }
 /*
 
