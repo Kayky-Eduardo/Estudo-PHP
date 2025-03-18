@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<form action="treino.php" method="post">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <label for="idade">idade:</label>
+    <input type="text" id="idade" name="idade" required><br><br>
+    
+    <label for="peso">peso:</label>
+    <input type="text" id="peso" name="peso" required>
+
+    <label for="escolha">Escolha: </label>
+    <select id="escolha" name="escolha" required>
+        <option value="1">Cadastrar</option>
+        <option value="2">Mostrar Lista</option>
+        <option value="3">Sair</option>
+    </select>    
+
+    <button type="submit">Enviar</button>
+</form>
