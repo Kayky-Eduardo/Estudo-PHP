@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {font-family: normal Arial, Helvetica, sans-serif;}
+
+        h1 {
+            font-size: 2em;
+            color: darkgreen;
+        }
+
+        h2 {
+            color: green;
+        }
+        
+        #titulo {
+            background-color: darkgreen;
+            color: white;
+            text-align: center;
+        }
+
+        .topico {
+            text-align: left;
+        }
+
+        .texto {
+            text-align: justify;
+        }
+        
+        a { font-weight: bold;
+            text-decoration: none;
+            color: red;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .especial:hover {
+            color: white;
+            background-color: black;
+            text-decoration: none;
+        }
+
+        .especial::before {
+            content: '>> ';
+            font-weight: lighter;
+
+        }
+
+        .especial::after {
+            content: ' <<';
+            font-weight: lighter;
+
+        }
+    </style>
+</head>
+<style>
+    div > p {
+        display: none;
+    }
+
+    div:hover > p {
+        display: block;
+        background-color: yellow;
+    }
+</style>
+<body>
+    <h1 id="titulo">Desenvolvimento web</h1>
+    <h1>Aprendendo HTML</h1>
+    <h2 class="topico">Semântica</h2>
+    <p class="texto"> Vamos fazer uma mistura de css e html 
+    para a estilização</p>
+    <h1>Aprendendo CSS</h1>
+    <h2 class="topico">Sun tzu o brabo</h2>
+    <p style="white-space: pre-line;">Sun Tzu foi um general, estrategista e filósofo chinês
+    e principal nome relacionado a escola militar de filosofia chinesa. 
+    É mais conhecido por seu tratado militar, A Arte da Guerra,
+    composto por 13 capítulos de estratégias militares.</p>
+    <h1 id="titulo">Onde estou aprendendo</h1>
+    <p>Se quiser aprender CSS e HTML acesse:
+    <a href="https://github.com/gustavoguanabara" target="_blank">github do guatemala</a></p>
+    <p>w3schools ajuda muito também:
+    <a href="https://www.w3schools.com/html" class="especial" target="_blank">w3schools</a></p>
+
+    <h1>Conteúdo especial</h1>
+    <div>
+        Passe o mouse por cima:
+        <p>surpresa!</p>
+    </div>
+    <p>conteúdo aparecendo</p>
+</body>
+</html>
