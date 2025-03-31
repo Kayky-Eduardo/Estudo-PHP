@@ -30,6 +30,7 @@ p {
 }
 
 body {
+    border-radius: 10px;
     background-color: black;
     height: 100%;
 }
@@ -48,9 +49,8 @@ body {
     width: 620px;
     height: 580px;
     border-radius: 20%;
-    transform-origin: left; /* Fixa o lado direito */
-    /*transform: scaleX(1.3); /* Aumenta apenas para a esquerda */
 }
+
 /*Estilo Cabeçario*/
 /*Alinhando e distribuindo*/
 header > .interface {
@@ -105,12 +105,6 @@ section.topo-do-site {
     width: 100%;
 }
 
-.txt-topo-site h1 hr {
-    width: 120%;
-    margin-top: 15px;
-    margin-left: -15px;
-}
-
 .txt-topo-site pre {
     color: green;
     margin-left: -130px;
@@ -140,6 +134,7 @@ section.topo-do-site {
 }
 
 section.p_parte {
+    border-radius: 20px;
     background-color: blue;
 }
 
