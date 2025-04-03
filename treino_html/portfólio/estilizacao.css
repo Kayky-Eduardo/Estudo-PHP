@@ -157,12 +157,25 @@ section.p_parte {
     color: black;
 }
 
-
-
 .direita {
     background-color: blue; 
     width: 50%;
 }
+
+.cursos .hr1 {
+    width: 50%;
+    height: 20px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.cursos .hr2 {
+    width: 50%;
+    height: 50px;
+    background-color: black;
+    border-radius: 10px;
+}
+
 .vertical{
     width: 5px;
     height: 500px;
