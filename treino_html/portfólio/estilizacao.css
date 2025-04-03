@@ -143,10 +143,29 @@ section.p_parte {
     margin-top: 120px;
 }
 
+.cursos{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.esquerda {
+    background-color: antiquewhite;
+    width: 50%;
+}
+
+.esquerda > p {
+    color: black;
+}
+
+
+
+.direita {
+    background-color: blue; 
+    width: 50%;
+}
 .vertical{
     width: 5px;
     height: 500px;
-    /* margin-left: 675px; */
     margin-top: 30px;
     background-color: greenyellow;
     border-radius: 10px;
