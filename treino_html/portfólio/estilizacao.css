@@ -149,30 +149,35 @@ section.p_parte {
     width: 100%;
 }
 .esquerda {
-    background-color: antiquewhite;
     width: 50%;
+    position: relative;
 }
 
-.esquerda > p {
+.curso1, .p1, .p2{
     color: black;
+    position: absolute;
+}
+
+.curso1 {
+    position: relative;
+    text-align: center;
 }
 
 .direita {
-    background-color: blue; 
     width: 50%;
 }
 
 .cursos .hr1 {
     width: 50%;
-    height: 20px;
-    background-color: black;
+    height: 50px;
+    background-color: DarkSlateGray;
     border-radius: 10px;
 }
 
 .cursos .hr2 {
     width: 50%;
-    height: 50px;
-    background-color: black;
+    height: 20px;
+    background-color: #B0E0E6;
     border-radius: 10px;
 }
 
