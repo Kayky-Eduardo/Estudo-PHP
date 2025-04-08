@@ -34,7 +34,7 @@ body {
     background-color: black;
     height: 100%;
 }
-/*Limita a largura da página e centraliza o conteúdo horizontalmente.*/
+
 .interface {
     max-width: 1280px;
     margin: 0 auto
@@ -51,11 +51,9 @@ body {
     border-radius: 20%;
 }
 
-/*Estilo Cabeçario*/
-/*Alinhando e distribuindo*/
 header > .interface {
     display: flex;
-    align-items: center; /*Alinha os itens verticalmente ao centro dentro do .interface*/
+    align-items: center;
     justify-content: space-between;
 }
 
