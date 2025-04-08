@@ -165,16 +165,13 @@ section.p_parte {
     max-width: 50%;
 }
 
-.curso1 {
-    position: relative;
-    text-align: center;
-}
-
 .dois_pontos {
     display: flex;
-    justify-content: left;
+    justify-content: center;
 }
+
 .hr1 {
+    margin: 5px;
     width: 5%;
     height: 15px;
     background-color: orange;
@@ -182,6 +179,7 @@ section.p_parte {
 }
 
 .hr2 {
+    margin: 5px;
     width: 5%;
     height: 15px;
     background-color: red;
@@ -194,4 +192,12 @@ section.p_parte {
     margin-top: 30px;
     background-color: greenyellow;
     border-radius: 10px;
+}
+
+.conector {
+    position: absolute;
+    display: flex;
+    justify-content: right;
+    left: 20%;
+    width: 30%;
 }
