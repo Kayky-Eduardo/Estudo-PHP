@@ -147,15 +147,22 @@ section.p_parte {
     display: flex;
     justify-content: center;
     width: 100%;
-}
-.esquerda {
-    width: 50%;
     position: relative;
 }
 
-.curso1, .p1, .p2{
-    color: black;
-    position: absolute;
+.esquerda, .direita {
+    padding: 10px;
+    width: 50%;    
+}
+
+.curso1, .curso2 {
+    text-align: center;
+    background-color: rgba(0, 0, 255, 0.473);
+    border: 2px solid #ca0303;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 10px auto;
+    max-width: 50%;
 }
 
 .curso1 {
@@ -163,27 +170,27 @@ section.p_parte {
     text-align: center;
 }
 
-.direita {
-    width: 50%;
+.dois_pontos {
+    display: flex;
+    justify-content: left;
 }
-
-.cursos .hr1 {
-    width: 50%;
-    height: 50px;
-    background-color: DarkSlateGray;
+.hr1 {
+    width: 5%;
+    height: 15px;
+    background-color: orange;
     border-radius: 10px;
 }
 
-.cursos .hr2 {
-    width: 50%;
-    height: 20px;
-    background-color: #B0E0E6;
+.hr2 {
+    width: 5%;
+    height: 15px;
+    background-color: red;
     border-radius: 10px;
 }
 
 .vertical{
     width: 5px;
-    height: 500px;
+    height: 200px;
     margin-top: 30px;
     background-color: greenyellow;
     border-radius: 10px;
