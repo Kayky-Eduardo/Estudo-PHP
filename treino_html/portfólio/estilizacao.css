@@ -192,10 +192,18 @@ section.p_parte {
     border-radius: 10px;
 }
 
-.conector {
+.conector-esquerda {
     position: absolute;
     display: flex;
     justify-content: right;
     left: 20%;
     width: 30%;
+}
+
+.conector-direita {
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    right: 37%;
+    width: 13%;
 }
