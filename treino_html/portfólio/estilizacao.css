@@ -214,3 +214,15 @@ section.p_parte {
     right: 37%;
     width: 13%;
 }
+
+.linkedin {
+    background-color: #0e76a8;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.github {
+    background-color: #171515;
+    margin: 10px auto;
+    padding: 10px;
+}
