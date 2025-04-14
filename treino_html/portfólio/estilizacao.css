@@ -46,6 +46,7 @@ body {
 }
 
 .imagem-grande {
+    width: 100%;
     width: 620px;
     height: 580px;
     border-radius: 20%;
@@ -161,6 +162,12 @@ section.p_parte {
     padding: 30px;
     margin: 10px auto;
     max-width: 50%;
+}
+
+.curso1:hover, .curso2:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgb(91, 7, 248);
 }
 
 .dois_pontos {
