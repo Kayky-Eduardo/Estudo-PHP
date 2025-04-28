@@ -216,11 +216,26 @@ section.p_parte {
 }
 
 .linkedin {
-    background-color: #0e76a8;
+    background-color: black;
     margin: 10px auto;
     padding: 10px;
+    width: 100px;
+    height: 100px
 }
 
-.github {
-    background-color: #ffffff;
+.github_white {
+    background-color: black;
+    margin: 10px auto;
+    padding: 10px;
+    width: 100px;
+    height: 100px
+}
+
+.q_parte > h1 {
+    text-align: center;
+    color: greenyellow;
+}
+
+.coontatos {
+    text-align: center;
 }
