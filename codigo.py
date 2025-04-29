@@ -1,24 +1,50 @@
 #pip install pywin32
 
-import ctypes
-import pywintypes
 import win32api
 import win32con
-import win32gui
+import pywintypes
 
-def mudar_resolucao(width, height):
-    # Pega o modo de exibição atual
+def listar_resolucoes_suportadas():
+    modos = []
+    i = 0
+    while True:
+        try:
+            modo = win32api.EnumDisplaySettings(None, i)
+            resolucao = (modo.PelsWidth, modo.PelsHeight)
+            if resolucao not in modos:
+                modos.append(resolucao)
+            i += 1
+        except:
+            break
+    return modos
+
+def alterar_resolucao(largura, altura):
     devmode = pywintypes.DEVMODEType()
-    devmode.PelsWidth = width
-    devmode.PelsHeight = height
+    devmode.PelsWidth = largura
+    devmode.PelsHeight = altura
     devmode.Fields = win32con.DM_PELSWIDTH | win32con.DM_PELSHEIGHT
 
-    # Tenta mudar a resolução
-    result = win32api.ChangeDisplaySettings(devmode, 0)
+    resultado = win32api.ChangeDisplaySettings(devmode, 0)
 
-    if result == win32con.DISP_CHANGE_SUCCESSFUL:
-        print(f"Resolução alterada para {width}x{height}.")
+    if resultado == win32con.DISP_CHANGE_SUCCESSFUL:
+        print(f"✅ Resolução alterada para {largura}x{altura}")
+    elif resultado == win32con.DISP_CHANGE_RESTART:
+        print("⚠️ Alteração exige reinício do sistema.")
     else:
-        print(f"Erro ao alterar resolução. Código: {result}")
+        print(f"❌ Erro ao alterar resolução. Código de erro: {resultado}")
 
-mudar_resolucao(1920, 1080)
+def main():
+    print("📺 Resoluções suportadas:")
+    resolucoes = listar_resolucoes_suportadas()
+    for i, (w, h) in enumerate(resolucoes):
+        print(f"{i+1}. {w}x{h}")
+
+    escolha = int(input("\nDigite o número da resolução desejada: ")) - 1
+    if 0 <= escolha < len(resolucoes):
+        largura, altura = resolucoes[escolha]
+        alterar_resolucao(largura, altura)
+    else:
+        print("❌ Escolha inválida.")
+
+if __name__ == "__main__":
+    main()
