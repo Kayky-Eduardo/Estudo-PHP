@@ -215,6 +215,11 @@ section.p_parte {
     width: 13%;
 }
 
+.q_parte h1 {
+    text-align: center;
+    color: greenyellow;
+}
+
 .linkedin {
     background-color: black;
     margin: 10px auto;
@@ -231,11 +236,6 @@ section.p_parte {
     height: 100px
 }
 
-.q_parte > h1 {
-    text-align: center;
-    color: greenyellow;
-}
-
-.coontatos {
+.contatos {
     text-align: center;
 }
