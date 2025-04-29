@@ -27,24 +27,24 @@ def alterar_resolucao(largura, altura):
     resultado = win32api.ChangeDisplaySettings(devmode, 0)
 
     if resultado == win32con.DISP_CHANGE_SUCCESSFUL:
-        print(f"✅ Resolução alterada para {largura}x{altura}")
+        print(f'Resolução alterada para {largura}x{altura}')
     elif resultado == win32con.DISP_CHANGE_RESTART:
-        print("⚠️ Alteração exige reinício do sistema.")
+        print('Alteração exige reinício do sistema.')
     else:
-        print(f"❌ Erro ao alterar resolução. Código de erro: {resultado}")
+        print(f'Erro ao alterar resolução. Código de erro: {resultado}')
 
 def main():
-    print("📺 Resoluções suportadas:")
+    print('Resoluções suportadas:')
     resolucoes = listar_resolucoes_suportadas()
     for i, (w, h) in enumerate(resolucoes):
-        print(f"{i+1}. {w}x{h}")
+        print(f'{i+1}. {w}x{h}')
 
-    escolha = int(input("\nDigite o número da resolução desejada: ")) - 1
+    escolha = int(input('\nDigite o número da resolução desejada: ')) - 1
     if 0 <= escolha < len(resolucoes):
         largura, altura = resolucoes[escolha]
         alterar_resolucao(largura, altura)
     else:
-        print("❌ Escolha inválida.")
+        print('Escolha inválida.')
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
