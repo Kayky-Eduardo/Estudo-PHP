@@ -6,7 +6,7 @@ import win32api
 import win32con
 import win32gui
 
-def set_resolution(width, height):
+def mudar_resolucao(width, height):
     # Pega o modo de exibição atual
     devmode = pywintypes.DEVMODEType()
     devmode.PelsWidth = width
@@ -21,4 +21,4 @@ def set_resolution(width, height):
     else:
         print(f"Erro ao alterar resolução. Código: {result}")
 
-set_resolution(1920, 1080)
+mudar_resolucao(1920, 1080)
