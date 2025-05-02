@@ -215,9 +215,74 @@ section.p_parte {
     width: 13%;
 }
 
-.q_parte h1 {
+.s_parte h1 {
     text-align: center;
     color: greenyellow;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pluri {
+    text-align: center;
+}
+
+.experiencia a {
+    text-decoration: none;
+    color: white;
+}
+
+.experiencia p {
+    padding: 10px;
+    max-width: 100%;    
+}
+
+.t_parte h1 {
+    text-align: center;
+    color: greenyellow;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.projetos {
+    text-align: center;
+}
+
+.projetos h1 {
+    color: greenyellow;
+}
+
+.estoque {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.estoque-python {
+    text-align: center;
+    background-color: rgba(0, 0, 255, 0.473);
+    border: 2px solid #ca0303;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 10px auto;
+    width: 25%;
+    display: inline-block;
+}
+
+.estoque-python:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgb(91, 7, 248);
+}
+
+.estoque-python p {
+    padding: 10px;
+    max-width: 100%;
+}
+
+.contatos {
+    text-align: center;
 }
 
 .linkedin {
@@ -236,13 +301,7 @@ section.p_parte {
     height: 100px
 }
 
-.contatos {
+.q_parte h1 {
     text-align: center;
-}
-
-.estoque {
-    background-color: red;
-    padding: 10px;
-    width: 100px;
-    height: 100px;
+    color: greenyellow;
 }
