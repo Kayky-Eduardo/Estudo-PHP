@@ -225,6 +225,12 @@ section.p_parte {
 
 .pluri {
     text-align: center;
+    background-color: rgba(0, 0, 255, 0.473);
+    border: 2px solid #ca0303;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 10px auto;
+    width: 25%;
 }
 
 .experiencia a {
