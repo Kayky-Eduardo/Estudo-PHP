@@ -13,7 +13,6 @@ function nova_array($array_antiga) {
         } else {
             continue;
         }
-    
     }
     return $array_maior;
 }
