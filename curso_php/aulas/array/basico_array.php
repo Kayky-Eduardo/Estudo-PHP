@@ -40,5 +40,29 @@ print_r($slice2);
 // porem tem como apenas tirar e não criar outra variavel
 // a partir do indice 1 remove 2 elementos
 $splice = array_splice($arry_numerica, 1, 2);
-print_r($arry_numerica)
+print_r($arry_numerica);
+
+
+$frutas = ['banana', 'maçã', 'pera'];
+
+// funciona com variáveis também
+if (in_array("banana", $frutas)) {
+    echo "O item banana esta presente na array";
+}
+
+// sort: ordem crescente rsort: decresente
+$numeros_aleatorios = [1, 2, 154, 131, 23, 144, 41];
+
+sort($numeros_aleatorios);
+print_r($numeros_aleatorios);
+
+// para array associativa é asort e arsort
+$array_associativa = [
+    'matheus' => 19,
+    'Pedro' => 17,
+    'kayky' => 18
+];
+asort($array_associativa);
+
+print_r($array_associativa);
 ?>
