@@ -62,7 +62,16 @@ $array_associativa = [
     'Pedro' => 17,
     'kayky' => 18
 ];
+
 asort($array_associativa);
 
 print_r($array_associativa);
+
+// inverte a array
+$arr_reversa = array_reverse($arry_numerica);
+print_r($arr_reversa);
+
+// reorganizando de forma aleatória
+shuffle($arr_reversa);
+print_r($arr_reversa);
 ?>
