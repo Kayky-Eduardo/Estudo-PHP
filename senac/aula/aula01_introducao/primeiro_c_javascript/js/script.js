@@ -1,0 +1,16 @@
+const form = document.getElementById('meuFormulario');
+
+form.addEventListener('submit', (event) => {
+    const mensagem = document.getElementById('mensagem').value.trim();
+
+    if (mensagem === "") {
+        alert("Por favor, digite uma mensagem antes de enviar.");
+        event.preventDefault(); // Impede o envio do formulário
+        return;
+    }
+
+    const confirmar = confirm("Deseja realmente enviar esta mensagem?");
+    if (!confirmar) {
+        event.preventDefault(); // cancela o envio
+    }
+})
